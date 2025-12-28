@@ -80,9 +80,12 @@ body {
 /* Header actions on the right */
 .header-actions {
     margin-left: auto;
+    margin-right: 50px;
     display: flex;
     gap: 12px;
     align-items: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 .header-actions .login,
 .header-actions .register,
@@ -90,7 +93,12 @@ body {
     color: #fff;
     padding: 6px 10px;
 }
-
+.header-actions .login:hover,
+.header-actions .register:hover,
+.header-actions .carrito:hover {
+    color: #E2211C;
+    padding: 6px 10px;
+}
 /* Allow toggle to hide menu on larger screens, while mobile rules (below)
    will flip behavior so checked = show menu on small screens */
 .menu-toggle:checked ~ .menu {
@@ -133,7 +141,7 @@ body {
     font-size: 48px;
     color: #FFFFFF;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .IndexSubTittle {
@@ -270,5 +278,129 @@ a:hover{
             font-size: 20px;
         }
     }
+/* indumentaria */
+.InduTittle {
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 120px;
+}
+.InduSubTittle {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+.filtro-item {
+    background-color: rgb(196, 191, 191);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-    
+.filtro-item:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.aplicar-filtros{
+    background-color: rgb(196, 191, 191);
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #000000;
+}
+
+.aplicar-filtros:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: rgb(196, 191, 191);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Mejora visual de inputs y selects */
+
+
+
+/* Mejora visual de select/options */
+select {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #E2211C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    outline: none;
+    border-color: #E2211C;
+    box-shadow: 0 0 8px rgba(226, 33, 28, 0.5);
+}
+
+select option {
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+/* Mejora visual de input de precio */
+.precio {
+    padding: 12px 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: text;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+
+.precio::placeholder {
+    color: #999999;
+    font-weight: normal;
+}
+
+.precio:hover {
+    border-color: #E2211C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.precio:focus {
+    outline: none;
+    border-color: #E2211C;
+    box-shadow: 0 0 8px rgba(226, 33, 28, 0.5);
+}
+
+/* Estilo para el spinner (flechas numéricas) */
+.precio::-webkit-outer-spin-button,
+.precio::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.precio[type=number] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>indumentaria</title>
+</head>
+<body>
+    <div class="header">
+        <div class="icono"><a href="index.html"><img src="img/logo.webp" alt="icono"></a></div>
+        <div class="busquera">
+            <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Mostrar menú">
+        <label for="menu-toggle" class="menu-btn" aria-hidden="true">☰</label>
+        <nav class="menu">
+            <a href="index.html" class="menuItem">Inicio</a>
+            <a href="indumentaria.html" class="menuItem">Indumentaria</a>
+            <a href="accesorios.html" class="menuItem">Accesorios</a>
+            <a href="calzados.html" class="menuItem">Calzados</a>
+        </nav>
+        <div class="header-actions">
+            <div class="login">login</div>
+            <div class="register">register</div>
+            <div class="carrito">carrito</div>
+        </div>
+    </div>
+    <h1 class="InduTittle">Indumentaria</h1>
+    <h2 class="InduSubTittle">Filtros</h2>
+    <div class="filtros">
+        <div class="filtro-item">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="todas">Todas</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="Shorts">Shorts</option>
+                <option value="Remeras">Remeras</option>
+            </select>
+        </div>
+        <div class="filtro-item">
+            <label for="talla">Talla:</label>
+            <select id="talla" name="talla">
+                <option value="todas">Todas</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+        </div>
+        <div class="filtro-item">
+            <label for="precio">Precio máximo:</label>
+            <input type="number" id="precio" name="precio" min="0" step="10" placeholder="$0" class="precio">
+        </div>
+        <button type="button" class="aplicar-filtros">Aplicar filtros</button>
+    </div>
+</body>
+</html>
