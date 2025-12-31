@@ -13,7 +13,6 @@ body {
     text-align: center;
     color: #fff;
     background-color: #333;
-    position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -403,4 +402,5 @@ select option {
 
 .precio[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
