@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>indumentaria Seleccion</title>
+    <title>Indumentaria Selección - InduRiver</title>
 </head>
 <body>
+    <div class="header">
+        <div class="icono"><a href="index.html"><img src="img/logo.webp" alt="Logo InduRiver"></a></div>
+        <div class="busquera">
+            <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+        
+        <div class="header-actions">
+            <div class="login"><a href="login.html">login</a></div>
+            <div class="register"><a href="Register.html">register</a></div>
+            <div class="carrito"><a href="backendFunc.html">carrito</a></div>
+        </div>
+    </div>
+
+    <h1 class="InduTittle">Indumentaria</h1>
+    <h2 class="InduSubTittle">Selección Argentina</h2>
     
+    <div class="filtros">
+        <div class="filtro-item">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="todas">Todas</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="shorts">Shorts</option>
+                <option value="remeras">Remeras</option>
+            </select>
+        </div>
+        <div class="filtro-item">
+            <label for="talla">Talla:</label>
+            <select id="talla" name="talla">
+                <option value="todas">Todas</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </div>
+        <div class="filtro-item">
+            <label for="precio">Precio máximo:</label>
+            <input type="number" id="precio" name="precio" min="0" step="10" placeholder="$0" class="precio">
+        </div>
+        <button type="button" class="aplicar-filtros">Aplicar filtros</button>
+    </div>
+
+    <div class="productos">
+        <!-- Los productos se cargarían aquí desde el backend -->
+        <div class="producto">
+            <img src="img/camisetaArgentina.webp" alt="Camiseta Argentina" class="img">
+            <h3>Camiseta Argentina</h3>
+            <p>$5,500</p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footerText">© 2026 InduRiver. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/induriver" class="footerlink" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/induriver" class="footerlink" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/induriver" class="footerlink" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="fecth.js"></script>
 </body>
 </html>

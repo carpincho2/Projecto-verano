@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Accesorios Selección - InduRiver</title>
+    <title>Carrito - InduRiver</title>
 </head>
 <body>
     <div class="header">
@@ -24,35 +24,7 @@
         </div>
     </div>
 
-    <h1 class="InduTittle">Accesorios</h1>
-    <h2 class="InduSubTittle">Selección Argentina</h2>
-    
-    <div class="filtros">
-        <div class="filtro-item">
-            <label for="tipo">Tipo:</label>
-            <select id="tipo" name="tipo">
-                <option value="todos">Todos</option>
-                <option value="gorras">Gorras</option>
-                <option value="bufandas">Bufandas</option>
-                <option value="cinturones">Cinturones</option>
-                <option value="mochilas">Mochilas</option>
-            </select>
-        </div>
-        <div class="filtro-item">
-            <label for="precio">Precio máximo:</label>
-            <input type="number" id="precio" name="precio" min="0" step="10" placeholder="$0" class="precio">
-        </div>
-        <button type="button" class="aplicar-filtros">Aplicar filtros</button>
-    </div>
-
-    <div class="productos">
-        <!-- Los productos se cargarían aquí desde el backend -->
-        <div class="producto">
-            <img src="img/collarArgentina.webp" alt="Collar Argentina" class="img">
-            <h3>Collar Argentina</h3>
-            <p>$1,800</p>
-        </div>
-    </div>
+    <div id="backendStatus" style="padding: 20px; margin-top: 80px; text-align: center; color: white; font-size: 16px;"></div>
 
     <footer>
         <p class="footerText">© 2026 InduRiver. All rights reserved.</p>
@@ -69,6 +41,6 @@
         </div>
     </footer>
 
-    <script src="fecth.js"></script>
+    <script src="fecth.js" defer></script>
 </body>
 </html>

@@ -1,78 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>InduRiver</title>
+    <title>InduRiver - Indumentaria del Equipo más Grande de América</title>
 </head>
 <body>
     <!-- header -->
     <div class="header">
-        <div class="icono"><a href="index.html"><img src="img/logo.webp" alt="icono"></a></div>
+        <div class="icono"><a href="index.html"><img src="img/logo.webp" alt="Logo InduRiver"></a></div>
         <div class="busquera">
             <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
         </div>
         
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+        
         <div class="header-actions">
             <div class="login"><a href="login.html">login</a></div>
             <div class="register"><a href="Register.html">register</a></div>
-            <div class="carrito"><a href="#">carrito</a></div>
+            <div class="carrito"><a href="backendFunc.html">carrito</a></div>
         </div>
     </div>
+
     <!-- main -->
-        <h1 class="indexMainTitle">InduRiver</h1>
-        <h2 class="IndexSubTittle">Indumentaria del equipo más grande de América.</h2>
-        
+    <h1 class="indexMainTitle">InduRiver</h1>
+    <h2 class="IndexSubTittle">Indumentaria del equipo más grande de América.</h2>
+    
     <div class="productos">
         <div class="producto">
             <a href="indumentariaRiver.html">
-                <img src="img/camisetariver.webp" alt="Indumentaria" class="img">
+                <img src="img/camisetariver.webp" alt="Indumentaria River" class="img">
                 <h3>Indumentaria</h3>
             </a>
         </div>
         <div class="producto">
             <a href="accesoriosRiver.html">
-                <img src="img/collarriver.webp" alt="Accesorios" class="img">
+                <img src="img/collarriver.webp" alt="Accesorios River" class="img">
                 <h3>Accesorios</h3>
             </a>
         </div>
         <div class="producto">
             <a href="calzadosRiver.html">
-                <img src="img/ZapatillasRiver.webp" alt="Calzados" class="img">
+                <img src="img/ZapatillasRiver.webp" alt="Calzados River" class="img">
                 <h3>Calzados</h3>
             </a>
         </div>
     </div>
-    <div class="separador">
-    </div>
+
+    <div class="separador"></div>
+
     <!-- Selecciones -->
     <div class="sectionselecciones">
-    <h2 class="SeleccionesSubTitle">Selecciones</h2>
-    <h2 class="SeleccionesMiniSubTitle">Indumentaria de la seleccion más grande de América.</h2>
-    <div class="selecionesProductos">
-        <div class="seleccionproducto">
-            <a href="indumentariaSeleccion.html">
-                <img src="img/camisetaArgentina.webp" alt="Indumentaria" class="img">
-                <h3 class="SeleccionesMiniSubTitle">Indumentaria</h3>
-            </a>
+        <h2 class="SeleccionesSubTitle">Selecciones</h2>
+        <h2 class="SeleccionesMiniSubTitle">Indumentaria de la selección más grande de América.</h2>
+        <div class="selecionesProductos">
+            <div class="seleccionproducto">
+                <a href="indumentariaSeleccion.html">
+                    <img src="img/camisetaArgentina.webp" alt="Indumentaria Selección" class="img">
+                    <h3 class="SeleccionesMiniSubTitle">Indumentaria</h3>
+                </a>
+            </div>
+            <div class="seleccionproducto">
+                <a href="accesoriosSeleccion.html">
+                    <img src="img/collarArgentina.webp" alt="Accesorios Selección" class="img">
+                    <h3 class="SeleccionesMiniSubTitle">Accesorios</h3>
+                </a>
+            </div>
+            <div class="seleccionproducto">
+                <a href="calzadosSeleccion.html">
+                    <img src="img/ZapatillasArgentina.webp" alt="Calzados Selección" class="img">
+                    <h3 class="SeleccionesMiniSubTitle">Calzados</h3>
+                </a>
+            </div>
         </div>
-        <div class="seleccionproducto">
-            <a href="accesoriosSeleccion.html">
-                <img src="img/collarArgentina.webp" alt="Accesorios" class="img">
-                <h3 class="SeleccionesMiniSubTitle">Accesorios</h3>
-            </a>
-        </div>
-        <div class="seleccionproducto">
-            <a href="calzadosSeleccion.html">
-                <img src="img/ZapatillasArgentina.webp" alt="Calzados" class="img">
-                <h3 class="SeleccionesMiniSubTitle">Calzados</h3>
-            </a>
-        </div>
-     </div>
-     <!-- footer -->
-     <footer>
+    </div>
+
+    <!-- footer -->
+    <footer>
         <p class="footerText">© 2026 InduRiver. All rights reserved.</p>
         <div class="footer-links">
             <a href="https://www.instagram.com/induriver" class="footerlink" title="Instagram">
@@ -85,6 +92,6 @@
                 <i class="fab fa-twitter"></i>
             </a>
         </div>
-     </footer>
+    </footer>
 </body>
 </html>
